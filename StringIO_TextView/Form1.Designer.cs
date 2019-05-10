@@ -30,7 +30,7 @@
         {
             this.txtEdit = new System.Windows.Forms.TextBox();
             this.btnEdit = new System.Windows.Forms.Button();
-            this.lblEdit = new System.Windows.Forms.Label();
+            this.lblResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtEdit
@@ -49,23 +49,24 @@
             this.btnEdit.TabIndex = 1;
             this.btnEdit.Text = "입력";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // lblEdit
+            // lblResult
             // 
-            this.lblEdit.AutoSize = true;
-            this.lblEdit.Font = new System.Drawing.Font("나눔바른고딕", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblEdit.Location = new System.Drawing.Point(13, 135);
-            this.lblEdit.Name = "lblEdit";
-            this.lblEdit.Size = new System.Drawing.Size(54, 22);
-            this.lblEdit.TabIndex = 2;
-            this.lblEdit.Text = "결과: ";
+            this.lblResult.AutoSize = true;
+            this.lblResult.Font = new System.Drawing.Font("나눔바른고딕", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblResult.Location = new System.Drawing.Point(13, 135);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(54, 22);
+            this.lblResult.TabIndex = 2;
+            this.lblResult.Text = "결과: ";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(299, 257);
-            this.Controls.Add(this.lblEdit);
+            this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.txtEdit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -82,7 +83,7 @@
 
         private System.Windows.Forms.TextBox txtEdit;
         private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.Label lblEdit;
+        private System.Windows.Forms.Label lblResult;
     }
 }
 
